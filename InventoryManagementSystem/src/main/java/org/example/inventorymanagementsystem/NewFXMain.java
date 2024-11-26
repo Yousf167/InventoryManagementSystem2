@@ -1,7 +1,8 @@
-/*
+package org.example.inventorymanagementsystem;/*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/javafx/FXMain.java to edit this template
  */
+/*
 
 import javafx.application.Application;
 import javafx.event.ActionEvent;
@@ -11,10 +12,12 @@ import javafx.scene.control.Button;
 import javafx.scene.layout.StackPane;
 import javafx.stage.Stage;
 
+*/
 /**
  *
  * @author Msi
- */
+ *//*
+
 public class NewFXMain extends Application {
     
     @Override
@@ -39,11 +42,14 @@ public class NewFXMain extends Application {
         primaryStage.show();
     }
 
-    /**
+    */
+/**
      * @param args the command line arguments
-     */
+     *//*
+
     public static void main(String[] args) {
         launch(args);
     }
     
 }
+*/
