@@ -1,12 +1,15 @@
 package org.example.inventorymanagementsystem;/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 
 /**
  *
  * @author yousf
  */
+
+import java.sql.Array;
+import java.util.ArrayList;
+import java.util.Date;
+import java.time.LocalDateTime;
+
 //comment class Person for implementation with actual Person class
 class Person 
 {
@@ -24,14 +27,28 @@ class Person
       }
 }
 
+//comment Order at actual implementation
+class Order
+{
+      int amount;
+      int[] prodID;
+      int[] pricePerID;
+      double[] totalPrice;
+      Date orderDate;
+      Date arrivalDate;
+      public Order(int[] id)
+      {
+      }
+}
+
 
 
 public class Client extends Person 
 {
       private static int count;
-      private     String clientID;
+      private String clientID;
       private static int orderCount;
-      private     double balance = 0;
+      private double balance = 0;
 
       Client(String name, String email, String password, String address)
       {
@@ -45,20 +62,24 @@ public class Client extends Person
             return "C" + count;
       }
 
-      public double getBalance() {
+      public double getBalance()
+      {
             return balance;
       }
 
-      public static int getCount() {
+      public static int getCount()
+      {
             return count;
       }
 
       
-      public String getClientID() {
+      public String getClientID()
+      {
             return clientID;
       }
       
-      public static int getOrderCount() {
+      public static int getOrderCount()
+      {
             return orderCount;
       }
       
@@ -66,9 +87,10 @@ public class Client extends Person
       {
             //connect to the database, and get the client's complete data
       }
-      public void placeOrder()
+      public void placeOrder(int[] orderIDs)
       {
             orderCount++;
+            Order order = new Order(orderIDs);
             //the products ordered get reduced
       }
 }

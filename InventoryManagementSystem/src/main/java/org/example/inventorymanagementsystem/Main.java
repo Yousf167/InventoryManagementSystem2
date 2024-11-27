@@ -25,11 +25,11 @@ public class Main extends Application {
         final String DB_URL = "jdbc:sqlite:database.db";
         try(Connection conn = DriverManager.getConnection(DB_URL))
         {
-            System.out.println("succesfull");
+            System.out.println("successful");
         }
         catch(Exception SQLException)
         {
-            System.out.println("unsuccessfull");
+            System.out.println("unsuccessful");
         }
     }
 }
